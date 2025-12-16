@@ -1,0 +1,40 @@
+<section class="se d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh;">
+    <div class="text-center container">
+      <p class="mb-1 ti">CONTACT FORM</p>
+      <div class="star-divider">
+        <i class="fas fa-star"></i>
+      </div>
+  
+      <!-- FORM -->
+      <form class="form-custom w-50 mx-auto mt-5 text-start">
+        <div class="input-group-custom mb-5">
+          <input type="text" name="userName" placeholder=" " required oninput="document.getElementById('nameOutput').innerText = this.value" />
+          <label>User Name</label>
+         
+        </div>
+  
+        <div class="input-group-custom mb-5">
+          <input type="text" name="userAge" placeholder=" " required oninput="document.getElementById('ageOutput ',).innerText = this.value" />
+          <label>User Age</label>
+        
+        </div>
+  
+        <div class="input-group-custom mb-5">
+          <input type="email" name="userEmail" placeholder=" " required oninput="document.getElementById('emailOutput').innerText = this.value" />
+          <label>User Email</label>
+         
+        </div>
+  
+        <div class="input-group-custom mb-5">
+          <input type="password" name="userPassword" placeholder=" " required oninput="document.getElementById('passOutput').innerText = this.value" />
+          <label>User Password</label>
+         
+        </div>
+  
+        <button type="submit" class="btn text-white me-auto d-block" style="background-color: #1abc9c;">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+  

@@ -1,0 +1,82 @@
+<section class="se d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh;">
+    <div class="text-center container mt-5">
+      <p class="mb-1 ti">PORTFOLIO COMPONENT</p>
+      <div class="star-divider">
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  
+    <div class="container py-5">
+      <div class="row justify-content-center">
+  
+        <!-- Image 1 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mb-4 text-center">
+          <div class="portfolio-item position-relative">
+            <img src="assets/imgi_1_poert1.png" class="img-fluid rounded portfolio-img" alt="Image 1" (click)="openImage('assets/imgi_1_poert1.png')" />
+            <div class="overlay-hover d-flex justify-content-center align-items-center" (click)="openImage('assets/imgi_1_poert1.png')">
+              <i class="fas fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Image 2 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mb-4 text-center">
+          <div class="portfolio-item position-relative">
+            <img src="assets/imgi_2_port2.png" class="img-fluid rounded portfolio-img" alt="Image 2" (click)="openImage('assets/imgi_2_port2.png')" />
+            <div class="overlay-hover d-flex justify-content-center align-items-center" (click)="openImage('assets/imgi_2_port2.png')">
+              <i class="fas fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Image 3 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mb-4 text-center">
+          <div class="portfolio-item position-relative">
+            <img src="assets/imgi_3_port3.png" class="img-fluid  rounded portfolio-img" alt="Image 3" (click)="openImage('assets/imgi_3_port3.png')" />
+            <div class="overlay-hover d-flex justify-content-center align-items-center" (click)="openImage('assets/imgi_3_port3.png')">
+              <i class="fas fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Image 4 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mb-4 text-center">
+          <div class="portfolio-item position-relative">
+            <img src="assets/imgi_1_poert1.png" class="img-fluid rounded portfolio-img" alt="Image 4" (click)="openImage('assets/imgi_1_poert1.png')" />
+            <div class="overlay-hover d-flex justify-content-center align-items-center" (click)="openImage('assets/imgi_1_poert1.png')">
+              <i class="fas fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Image 5 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mb-4 text-center">
+          <div class="portfolio-item position-relative">
+            <img src="assets/imgi_2_port2.png" class="img-fluid rounded portfolio-img" alt="Image 5" (click)="openImage('assets/imgi_2_port2.png')" />
+            <div class="overlay-hover d-flex justify-content-center align-items-center" (click)="openImage('assets/imgi_2_port2.png')">
+              <i class="fas fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Image 6 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mb-4 text-center">
+          <div class="portfolio-item position-relative">
+            <img src="assets/imgi_3_port3.png" class="img-fluid rounded portfolio-img" alt="Image 6" (click)="openImage('assets/imgi_3_port3.png')" />
+            <div class="overlay-hover d-flex justify-content-center align-items-center" (click)="openImage('assets/imgi_3_port3.png')">
+              <i class="fas fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Fullscreen Overlay -->
+    <div *ngIf="selectedImage" class="overlay" (click)="closeImage()">
+      <div class="overlay-content" (click)="$event.stopPropagation()">
+        <img [src]="selectedImage" alt="Zoomed" />
+      </div>
+    </div>
+  </section>
+  

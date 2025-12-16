@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg custom-navbar" [class.shrink-navbar]="isScrolled">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home">START FRAMEWORK</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active-link">
+            ABOUT
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/portfolio" routerLinkActive="active-link">
+            PORTFOLIO
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active-link">
+            CONTACT
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
